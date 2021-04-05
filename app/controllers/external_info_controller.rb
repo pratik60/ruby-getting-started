@@ -1,6 +1,7 @@
 class ExternalInfoController < ApplicationController
 
   skip_before_action :verify_authenticity_token, only: [:initialize_url, :submit_url, :submit_sheet_url]
+  after_action :allow_iframe, only: :submit_sheet_url
 
   # GET /widgets
   # GET /widgets.json
@@ -87,6 +88,10 @@ class ExternalInfoController < ApplicationController
 
   def submit_sheet_url
     render layout: "balance"
+  end
+
+  def allow_iframe
+    response.headers.except! 'X-Frame-Options'
   end
 
   # GET /widgets/1
