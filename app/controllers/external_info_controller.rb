@@ -1,5 +1,7 @@
 class ExternalInfoController < ApplicationController
 
+  skip_before_action :verify_authenticity_token, only: [:initialize_url]
+
   # GET /widgets
   # GET /widgets.json
   def initialize_url
