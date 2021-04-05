@@ -2,24 +2,6 @@ class ExternalInfoController < ApplicationController
 
   skip_before_action :verify_authenticity_token, only: [:initialize_url, :submit_url]
 
-  {
-    "type": "input",
-    "id": "unsaved-1",
-    "label": "Unsaved",
-    "placeholder": "Enter input here...",
-    "save_state": "unsaved"
-  },
-  {
-    "type": "input",
-    "id": "unsaved-2",
-    "label": "Unsaved (Action)",
-    "placeholder": "Enter input here...",
-    "save_state": "unsaved",
-    "action": {
-      "type": "submit"
-    }
-  },
-
   # GET /widgets
   # GET /widgets.json
   def initialize_url
