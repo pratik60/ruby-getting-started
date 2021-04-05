@@ -86,7 +86,7 @@ class ExternalInfoController < ApplicationController
   end
 
   def submit_sheet_url
-    format.html { render :balance }
+    render :balance
   end
 
   # GET /widgets/1
