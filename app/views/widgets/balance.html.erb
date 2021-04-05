@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sheet 1</title>
+  <!-- Adding the Messenger Sheet Library -->
+  <script src="https://s3.amazonaws.com/intercom-sheets.com/messenger-sheet-library.latest.js"></script>
+</head>
+<body>
+  <label for="name">Name (4 to 8 characters):</label>
+  <input type="text">Text
+  <button id="done">Done</button>
+
+  <!-- Example of using a Messenger Sheet Library method -->
+  <script>
+    const done = document.querySelector('#done');
+    done.addEventListener('click', () => {
+      INTERCOM_MESSENGER_SHEET_LIBRARY.submitSheet({ super: "secret" });
+    });
+  </script>
+</body>
+</html>

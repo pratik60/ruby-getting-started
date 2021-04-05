@@ -1,0 +1,319 @@
+{
+  "workspace_id": "qdvm02uh",
+  "current_canvas": {
+    "content": {
+      "components": [
+        {
+          "type": "input",
+          "id": "address",
+          "label": "Unsaved",
+          "placeholder": "Enter address here...",
+          "disabled": false,
+          "save_state": "unsaved",
+          "aria_label": "Unsaved"
+        },
+        {
+          "type": "input",
+          "id": "pincode",
+          "label": "Unsaved",
+          "placeholder": "Enter pincode here...",
+          "disabled": false,
+          "save_state": "unsaved",
+          "aria_label": "Unsaved"
+        },
+        {
+          "id": "verification_form",
+          "type": "button",
+          "label": "Verify your details",
+          "style": "primary",
+          "disabled": false,
+          "action": { "type": "submit" }
+        }
+      ]
+    }
+  },
+  "component_id": "verification_form",
+  "input_values": { "address": "54 garand", "pincode": "n7" },
+  "customer": {
+    "type": "user",
+    "id": "5b3210b437f3afee43aecce4",
+    "user_id": "1",
+    "anonymous": false,
+    "email": "inapps-test@intercom.io",
+    "phone": null,
+    "name": null,
+    "pseudonym": null,
+    "avatar": { "type": "avatar", "image_url": null },
+    "app_id": "qdvm02uh",
+    "companies": { "type": "company.list", "companies": [] },
+    "location_data": {
+      "type": "location_data",
+      "city_name": "Islington",
+      "continent_code": "EU",
+      "country_name": "United Kingdom",
+      "postal_code": "N7",
+      "region_name": "England",
+      "timezone": "Europe/London",
+      "country_code": "GBR"
+    },
+    "last_request_at": "2021-04-05T18:57:03.100+00:00",
+    "created_at": "2018-06-26T10:08:52.296+00:00",
+    "remote_created_at": "2018-06-26T10:08:52.266+00:00",
+    "signed_up_at": "2018-06-26T10:08:52.266+00:00",
+    "updated_at": "2021-04-05T19:19:23.483+00:00",
+    "session_count": 255,
+    "social_profiles": { "type": "social_profile.list", "social_profiles": [] },
+    "owner_id": 3652728,
+    "unsubscribed_from_emails": false,
+    "marked_email_as_spam": false,
+    "has_hard_bounced": true,
+    "tags": { "type": "tag.list", "tags": [] },
+    "segments": { "type": "segment.list", "segments": [] },
+    "custom_attributes": { "job_title": null, "locale": "sv-SE" },
+    "referrer": "https://intercom.github.io/chat-raclette/user.html",
+    "utm_campaign": null,
+    "utm_content": null,
+    "utm_medium": null,
+    "utm_source": "fake-button",
+    "utm_term": null,
+    "do_not_track": null
+  },
+  "contact": {
+    "type": "contact",
+    "id": "5b3210b437f3afee43aecce4",
+    "workspace_id": "qdvm02uh",
+    "external_id": "1",
+    "role": "user",
+    "email": "inapps-test@intercom.io",
+    "phone": null,
+    "name": null,
+    "avatar": null,
+    "owner_id": 3652728,
+    "social_profiles": { "type": "list", "data": [] },
+    "has_hard_bounced": true,
+    "marked_email_as_spam": false,
+    "unsubscribed_from_emails": false,
+    "created_at": "2018-06-26T10:08:52.296+00:00",
+    "updated_at": "2021-04-05T19:19:23.483+00:00",
+    "signed_up_at": "2018-06-26T10:08:52.266+00:00",
+    "last_seen_at": "2021-04-05T18:57:03.100+00:00",
+    "last_replied_at": "2021-04-05T19:19:20.000+00:00",
+    "last_contacted_at": "2021-04-05T19:19:22.000+00:00",
+    "last_email_opened_at": null,
+    "last_email_clicked_at": null,
+    "language_override": null,
+    "browser": "chrome",
+    "browser_version": "89.0.4389.90",
+    "browser_language": "en",
+    "os": "OS X 11.2.3",
+    "location": {
+      "type": "location",
+      "country": "United Kingdom",
+      "region": "England",
+      "city": "Islington"
+    },
+    "android_app_name": null,
+    "android_app_version": null,
+    "android_device": null,
+    "android_os_version": null,
+    "android_sdk_version": null,
+    "android_last_seen_at": null,
+    "ios_app_name": null,
+    "ios_app_version": null,
+    "ios_device": null,
+    "ios_os_version": null,
+    "ios_sdk_version": null,
+    "ios_last_seen_at": null,
+    "custom_attributes": { "job_title": null, "locale": "sv-SE" },
+    "tags": {
+      "type": "list",
+      "data": [],
+      "url": "/contacts/5b3210b437f3afee43aecce4/tags",
+      "total_count": 0,
+      "has_more": false
+    },
+    "notes": {
+      "type": "list",
+      "data": [],
+      "url": "/contacts/5b3210b437f3afee43aecce4/notes",
+      "total_count": 0,
+      "has_more": false
+    },
+    "companies": {
+      "type": "list",
+      "data": [],
+      "url": "/contacts/5b3210b437f3afee43aecce4/companies",
+      "total_count": 0,
+      "has_more": false
+    }
+  },
+  "context": {
+    "conversation_id": 36000000858,
+    "locale": "en",
+    "location": "conversation",
+    "messenger_action_color": "#2392ec",
+    "messenger_background_color": "#2392ec",
+    "referrer": "https://intercom.github.io/chat-raclette/user.html"
+  },
+  "external_info": {
+    "workspace_id": "qdvm02uh",
+    "current_canvas": {
+      "content": {
+        "components": [
+          {
+            "type": "input",
+            "id": "address",
+            "label": "Unsaved",
+            "placeholder": "Enter address here...",
+            "disabled": false,
+            "save_state": "unsaved",
+            "aria_label": "Unsaved"
+          },
+          {
+            "type": "input",
+            "id": "pincode",
+            "label": "Unsaved",
+            "placeholder": "Enter pincode here...",
+            "disabled": false,
+            "save_state": "unsaved",
+            "aria_label": "Unsaved"
+          },
+          {
+            "id": "verification_form",
+            "type": "button",
+            "label": "Verify your details",
+            "style": "primary",
+            "disabled": false,
+            "action": { "type": "submit" }
+          }
+        ]
+      }
+    },
+    "component_id": "verification_form",
+    "input_values": { "address": "54 garand", "pincode": "n7" },
+    "customer": {
+      "type": "user",
+      "id": "5b3210b437f3afee43aecce4",
+      "user_id": "1",
+      "anonymous": false,
+      "email": "inapps-test@intercom.io",
+      "phone": null,
+      "name": null,
+      "pseudonym": null,
+      "avatar": { "type": "avatar", "image_url": null },
+      "app_id": "qdvm02uh",
+      "companies": { "type": "company.list", "companies": [] },
+      "location_data": {
+        "type": "location_data",
+        "city_name": "Islington",
+        "continent_code": "EU",
+        "country_name": "United Kingdom",
+        "postal_code": "N7",
+        "region_name": "England",
+        "timezone": "Europe/London",
+        "country_code": "GBR"
+      },
+      "last_request_at": "2021-04-05T18:57:03.100+00:00",
+      "created_at": "2018-06-26T10:08:52.296+00:00",
+      "remote_created_at": "2018-06-26T10:08:52.266+00:00",
+      "signed_up_at": "2018-06-26T10:08:52.266+00:00",
+      "updated_at": "2021-04-05T19:19:23.483+00:00",
+      "session_count": 255,
+      "social_profiles": {
+        "type": "social_profile.list",
+        "social_profiles": []
+      },
+      "owner_id": 3652728,
+      "unsubscribed_from_emails": false,
+      "marked_email_as_spam": false,
+      "has_hard_bounced": true,
+      "tags": { "type": "tag.list", "tags": [] },
+      "segments": { "type": "segment.list", "segments": [] },
+      "custom_attributes": { "job_title": null, "locale": "sv-SE" },
+      "referrer": "https://intercom.github.io/chat-raclette/user.html",
+      "utm_campaign": null,
+      "utm_content": null,
+      "utm_medium": null,
+      "utm_source": "fake-button",
+      "utm_term": null,
+      "do_not_track": null
+    },
+    "contact": {
+      "type": "contact",
+      "id": "5b3210b437f3afee43aecce4",
+      "workspace_id": "qdvm02uh",
+      "external_id": "1",
+      "role": "user",
+      "email": "inapps-test@intercom.io",
+      "phone": null,
+      "name": null,
+      "avatar": null,
+      "owner_id": 3652728,
+      "social_profiles": { "type": "list", "data": [] },
+      "has_hard_bounced": true,
+      "marked_email_as_spam": false,
+      "unsubscribed_from_emails": false,
+      "created_at": "2018-06-26T10:08:52.296+00:00",
+      "updated_at": "2021-04-05T19:19:23.483+00:00",
+      "signed_up_at": "2018-06-26T10:08:52.266+00:00",
+      "last_seen_at": "2021-04-05T18:57:03.100+00:00",
+      "last_replied_at": "2021-04-05T19:19:20.000+00:00",
+      "last_contacted_at": "2021-04-05T19:19:22.000+00:00",
+      "last_email_opened_at": null,
+      "last_email_clicked_at": null,
+      "language_override": null,
+      "browser": "chrome",
+      "browser_version": "89.0.4389.90",
+      "browser_language": "en",
+      "os": "OS X 11.2.3",
+      "location": {
+        "type": "location",
+        "country": "United Kingdom",
+        "region": "England",
+        "city": "Islington"
+      },
+      "android_app_name": null,
+      "android_app_version": null,
+      "android_device": null,
+      "android_os_version": null,
+      "android_sdk_version": null,
+      "android_last_seen_at": null,
+      "ios_app_name": null,
+      "ios_app_version": null,
+      "ios_device": null,
+      "ios_os_version": null,
+      "ios_sdk_version": null,
+      "ios_last_seen_at": null,
+      "custom_attributes": { "job_title": null, "locale": "sv-SE" },
+      "tags": {
+        "type": "list",
+        "data": [],
+        "url": "/contacts/5b3210b437f3afee43aecce4/tags",
+        "total_count": 0,
+        "has_more": false
+      },
+      "notes": {
+        "type": "list",
+        "data": [],
+        "url": "/contacts/5b3210b437f3afee43aecce4/notes",
+        "total_count": 0,
+        "has_more": false
+      },
+      "companies": {
+        "type": "list",
+        "data": [],
+        "url": "/contacts/5b3210b437f3afee43aecce4/companies",
+        "total_count": 0,
+        "has_more": false
+      }
+    },
+    "context": {
+      "conversation_id": 36000000858,
+      "locale": "en",
+      "location": "conversation",
+      "messenger_action_color": "#2392ec",
+      "messenger_background_color": "#2392ec",
+      "referrer": "https://intercom.github.io/chat-raclette/user.html"
+    }
+  }
+}

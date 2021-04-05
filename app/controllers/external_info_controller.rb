@@ -1,6 +1,6 @@
 class ExternalInfoController < ApplicationController
 
-  skip_before_action :verify_authenticity_token, only: [:initialize_url, :submit_url]
+  skip_before_action :verify_authenticity_token, only: [:initialize_url, :submit_url, :submit_sheet_url]
 
   # GET /widgets
   # GET /widgets.json
@@ -72,12 +72,21 @@ class ExternalInfoController < ApplicationController
         canvas: {
           content: {
             components: [
-              { type: "button", label: "Click ME!!!!", style: "primary", id: "url_button", action: {type: "submit"} },
+              { type: "button", label: "Submit meter reading", style: "primary", id: "meter_reading_submission", 
+                action: {
+                  type: "sheet",
+                  url:  "https://obscure-dusk-46824.herokuapp.com/submit-sheet-url"
+                }
+              },
             ], 
           },
         },
       }
-    end 
+    end
+  end
+
+  def submit_sheet_url
+    format.html { render :balance }
   end
 
   # GET /widgets/1
