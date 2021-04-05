@@ -1,11 +1,61 @@
 class ExternalInfoController < ApplicationController
 
-  skip_before_action :verify_authenticity_token, only: [:initialize_url]
+  skip_before_action :verify_authenticity_token, only: [:initialize_url, :submit_url]
+
+  {
+    "type": "input",
+    "id": "unsaved-1",
+    "label": "Unsaved",
+    "placeholder": "Enter input here...",
+    "save_state": "unsaved"
+  },
+  {
+    "type": "input",
+    "id": "unsaved-2",
+    "label": "Unsaved (Action)",
+    "placeholder": "Enter input here...",
+    "save_state": "unsaved",
+    "action": {
+      "type": "submit"
+    }
+  },
 
   # GET /widgets
   # GET /widgets.json
   def initialize_url
     Rails.logger.info("Params for initialize_url:#{params}")
+    render json: {
+      canvas: {
+        content: {
+          components: [
+              {
+                "type": "input",
+                "id": "address",
+                "label": "Unsaved",
+                "placeholder": "Enter address here...",
+                "save_state": "unsaved"
+              },
+              {
+                "type": "input",
+                "id": "pincode",
+                "label": "Unsaved",
+                "placeholder": "Enter pincode here...",
+                "save_state": "unsaved"
+              },
+            { type: "button", 
+            label: "Verify your details", 
+            style: "primary", 
+            id: "verification_form", 
+            action: {type: "submit"} 
+          },
+          ], 
+        },
+      },
+    }
+  end
+
+  def submit_url
+    Rails.logger.info("Params for submit_url:#{params}")
     render json: {
       canvas: {
         content: {
