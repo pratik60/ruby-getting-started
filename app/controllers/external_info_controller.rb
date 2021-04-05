@@ -13,14 +13,14 @@ class ExternalInfoController < ApplicationController
               {
                 "type": "input",
                 "id": "address",
-                "label": "Unsaved",
+                "label": "Address",
                 "placeholder": "Enter address here...",
                 "save_state": "unsaved"
               },
               {
                 "type": "input",
                 "id": "pincode",
-                "label": "Unsaved",
+                "label": "Pincode",
                 "placeholder": "Enter pincode here...",
                 "save_state": "unsaved"
               },
@@ -38,15 +38,46 @@ class ExternalInfoController < ApplicationController
 
   def submit_url
     Rails.logger.info("Params for submit_url:#{params}")
-    render json: {
-      canvas: {
-        content: {
-          components: [
-            { type: "button", label: "Click ME!!!!", style: "primary", id: "url_button", action: {type: "submit"} },
-          ], 
+    if params["external_info"]["input_values"]["pincode"] != "n7"
+      render json: {
+        canvas: {
+          content: {
+            components: [
+                {
+                  "type": "input",
+                  "id": "address",
+                  "label": "Address",
+                  "placeholder": "Enter address here...",
+                  "save_state": "unsaved"
+                },
+                {
+                  "type": "input",
+                  "id": "pincode",
+                  "label": "Pincode",
+                  "placeholder": "Enter pincode here...",
+                  "save_state": "failed"
+                },
+              { type: "button", 
+              label: "Verify your details", 
+              style: "primary", 
+              id: "verification_form", 
+              action: {type: "submit"} 
+            },
+            ], 
+          },
         },
-      },
-    }
+      }
+    else
+      render json: {
+        canvas: {
+          content: {
+            components: [
+              { type: "button", label: "Click ME!!!!", style: "primary", id: "url_button", action: {type: "submit"} },
+            ], 
+          },
+        },
+      }
+    end 
   end
 
   # GET /widgets/1
